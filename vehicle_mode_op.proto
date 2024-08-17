@@ -10,3 +10,12 @@ message VehicleModelOp {
   bytes bytes_val = 4;
   google.protobuf.Timestamp created_at = 5;
 }
+
+message Signature {
+  enum SignatureType {
+    HMAC_SHA256 = 0;
+    // Add other signature types as needed
+  }
+  SignatureType type = 1;
+  bytes data = 2;
+}
