@@ -1,7 +1,5 @@
 syntax = "proto3";
 
-package vehicle_ota;
-
 import "google/protobuf/timestamp.proto";
 
 message OtaScheduledInstallConfig {

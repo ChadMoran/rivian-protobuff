@@ -1,7 +1,5 @@
 syntax = "proto3";
 
-package vehicle_ota;
-
 message VehicleGeofences {
   repeated Geofence geofences = 1;
 }
