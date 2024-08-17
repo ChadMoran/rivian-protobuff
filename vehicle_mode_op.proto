@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+import "parallax_operation.proto";
+
+message VehicleModelOp {
+  string model = 1;
+  ParallaxOperation operation = 2;
+  bytes uuid = 3;
+  bytes bytes_val = 4;
+  google.protobuf.Timestamp created_at = 5;
+}
