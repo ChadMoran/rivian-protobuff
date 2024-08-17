@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package vehicle_ota;
+
+message VehicleGeofences {
+  repeated Geofence geofences = 1;
+}
+
+message Geofence {
+  int32 id = 1;
+  string name = 2;
+}
